@@ -1,0 +1,49 @@
+body {
+    background-color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card {
+    background-color: antiquewhite;
+    max-width: 800px;
+    margin: 16px auto;
+    padding: 8px;
+}
+
+h1 {
+    font-size: 50px;
+    color: brown;
+    background-color: bisque;
+    padding: 20px;
+    border: solid 1px black;
+}
+
+h2 {
+    font-size: 24px;
+    color: brown;
+    background-color: bisque;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+#servings {
+    display: inline-block;
+    font-size: 18px;
+    color: black;
+    font-weight: solid;
+    background-color: bisque;
+    height: auto;
+}
+
+.ingredients {
+    padding: 0;
+    font-size: 24px;
+    background-color: bisque;
+}
+
+#ingredients {
+    display: inline;
+}
