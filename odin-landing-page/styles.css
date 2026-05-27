@@ -4,18 +4,37 @@ body {
     flex-direction: column;
     /* padding: 10px 100px; */
     margin: 10px 150px;
+    background-color: black;
 }
 
-.section1 {
+.section1,
+.section2 {
     background-color: #1F2937;
-    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     color: white;
-    padding: 10px 100px;
+    padding: 50px 100px;
     gap: 30px;
+}
+
+.section1 {
+    background-color: #1F2937;
+    color: white;
+}
+
+
+.section2 {
+    background-color: white;
+    color: black;
+}
+
+.pictures-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 80px;
 }
 
 .header {
@@ -23,6 +42,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 10px;
 }
 
 .main1 {
@@ -30,6 +50,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 10px;
 }
 
 ul {
@@ -43,6 +64,7 @@ ul {
 a {
     text-decoration: none;
     color: white;
+    padding: 10px;
 }
 
 .footer {
@@ -55,8 +77,27 @@ a {
     color: white;
 }
 
-img {
+.viking {
     padding: 10px;
+}
+
+.info {
+    width: 160px;
+    text-align: center;
+}
+
+.rune {
+    border: #3882F6;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 30px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    margin: 0;
 }
 
 button {
