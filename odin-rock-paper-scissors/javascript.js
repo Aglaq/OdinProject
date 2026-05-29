@@ -58,21 +58,25 @@ function playRound(computerSelection, playerSelection) {
 }
 
 // While Loop for 5 rounds, with the winner declaration at the end
-while (isGameOn) {
-    playRound(getComputerChoice(), getPlayerChoice());
-    roundNumber++;
-    console.log("Your Score: " + playerScore)
-    console.log("Computer Score: " + computerScore)
-    if (roundNumber >= 6) {
-        isGameOn = false;
-        if (playerScore > computerScore) {
-            console.log("End of the Game! You've won!!!")
-        }
-        else if (playerScore < computerScore) {
-            console.log("End of the Game! You've lost!!!")
-        }
-        else {
-            console.log("End of the Game! Tie!!!")
+function playGame() {
+    while (isGameOn) {
+        playRound(getComputerChoice(), getPlayerChoice());
+        roundNumber++;
+        console.log("Your Score: " + playerScore)
+        console.log("Computer Score: " + computerScore)
+        if (roundNumber >= 6) {
+            isGameOn = false;
+            if (playerScore > computerScore) {
+                console.log("End of the Game! You've won!!!")
+            }
+            else if (playerScore < computerScore) {
+                console.log("End of the Game! You've lost!!!")
+            }
+            else {
+                console.log("End of the Game! Tie!!!")
+            }
         }
     }
 }
+
+playGame();
