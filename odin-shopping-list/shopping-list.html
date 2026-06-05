@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+        li {
+            margin-bottom: 10px;
+        }
+
+        li button {
+            font-size: 12px;
+            margin-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body id="body">
+
+    <h1>My shopping list</h1>
+
+    <form>
+        <label for="item">Enter a new item:</label>
+        <input type="text" name="item" id="item">
+        <button id="addButton" type="button">Add item</button>
+    </form>
+
+    <ul>
+
+    </ul>
+
+    <script>
+        function addToList() {
+            // preventDefault();
+            const inputElement = document.getElementById("item").value;
+            // alert(`alert is: ${inputElement}`);
+            document.getElementById("item").value = "";
+            const listElement = document.createElement("li");
+            const elementName = document.createElement("span");
+            const deleteButton = document.createElement("button");
+            listElement.appendChild(elementName);
+            listElement.appendChild(deleteButton);
+            elementName.textContent = inputElement;
+            deleteButton.textContent = "Delete";
+            deleteButton.addEventListener("click", function () {
+                listElement.remove()
+            })
+            list.appendChild(listElement);
+            return;
+        }
+
+        const list = document.querySelector("ul");
+        const input = document.querySelector("input");
+        const addItemButton = document.getElementById("addButton");
+        addItemButton.addEventListener("click", addToList);
+    </script>
+</body>
+
+</html>
