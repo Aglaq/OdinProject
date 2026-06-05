@@ -57,26 +57,39 @@ function playRound(computerSelection, playerSelection) {
     }
 }
 
-// While Loop for 5 rounds, with the winner declaration at the end
-function playGame() {
-    while (isGameOn) {
-        playRound(getComputerChoice(), getPlayerChoice());
-        roundNumber++;
-        console.log("Your Score: " + playerScore)
-        console.log("Computer Score: " + computerScore)
-        if (roundNumber >= 6) {
-            isGameOn = false;
-            if (playerScore > computerScore) {
-                console.log("End of the Game! You've won!!!")
-            }
-            else if (playerScore < computerScore) {
-                console.log("End of the Game! You've lost!!!")
-            }
-            else {
-                console.log("End of the Game! Tie!!!")
-            }
-        }
-    }
-}
+const rockButton = document.createElement("button");
+rockButton.addEventListener("click", playRound(getComputerChoice(), 1));
+rockButton.textContent = "ROCK";
+body.appendChild(rockButton);
+const paperButton = document.createElement("button");
+paperButton.addEventListener("click", playRound(getComputerChoice(), 2));
+paperButton.textContent = "PAPER";
+body.appendChild(paperButton);
+const scissorsButton = document.createElement("button");
+scissorsButton.addEventListener("click", playRound(getComputerChoice(), 0));
+scissorsButton.textContent = "SCISSORS";
+body.appendChild(scissorsButton);
 
-playGame();
+
+
+// While Loop for 5 rounds, with the winner declaration at the end
+// function playGame() {
+//     while (isGameOn) {
+//         playRound(getComputerChoice(), getPlayerChoice());
+//         roundNumber++;
+//         console.log("Your Score: " + playerScore)
+//         console.log("Computer Score: " + computerScore)
+//         if (roundNumber >= 6) {
+//             isGameOn = false;
+//             if (playerScore > computerScore) {
+//                 console.log("End of the Game! You've won!!!")
+//             }
+//             else if (playerScore < computerScore) {
+//                 console.log("End of the Game! You've lost!!!")
+//             }
+//             else {
+//                 console.log("End of the Game! Tie!!!")
+//             }
+//         }
+//     }
+// }
