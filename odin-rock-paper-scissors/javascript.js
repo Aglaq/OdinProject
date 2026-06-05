@@ -58,15 +58,15 @@ function playRound(computerSelection, playerSelection) {
 }
 
 const rockButton = document.createElement("button");
-rockButton.addEventListener("click", playRound(getComputerChoice(), 1));
+rockButton.addEventListener("click", () => playRound(getComputerChoice(), 1));
 rockButton.textContent = "ROCK";
 body.appendChild(rockButton);
 const paperButton = document.createElement("button");
-paperButton.addEventListener("click", playRound(getComputerChoice(), 2));
+paperButton.addEventListener("click", () => playRound(getComputerChoice(), 2));
 paperButton.textContent = "PAPER";
 body.appendChild(paperButton);
 const scissorsButton = document.createElement("button");
-scissorsButton.addEventListener("click", playRound(getComputerChoice(), 0));
+scissorsButton.addEventListener("click", () => playRound(getComputerChoice(), 0));
 scissorsButton.textContent = "SCISSORS";
 body.appendChild(scissorsButton);
 
