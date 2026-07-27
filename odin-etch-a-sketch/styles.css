@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    background-color: #1F2937;
+    background-color: #4F2937;
     padding: 0;
     margin: 0;
     display: flex;
@@ -28,7 +28,7 @@ body {
 }
 
 .element {
-    background-color: red;
+    background-color: white;
     padding: 0;
     margin: 1px;
     flex: 1;
