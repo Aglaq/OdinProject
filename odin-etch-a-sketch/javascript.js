@@ -25,10 +25,11 @@ function colorChanger() {
     });
 }
 
-function reset(size) {
+function reset() {
     const elements = document.querySelectorAll(".element");
     elements.forEach(element => element.remove());
-    makeGrid(size);
+    let newSize = prompt("What size of the grid do you want (max: 100)?")
+    makeGrid(newSize);
     colorChanger();
 }
 
