@@ -28,7 +28,14 @@ function colorChanger() {
 function reset() {
     const elements = document.querySelectorAll(".element");
     elements.forEach(element => element.remove());
-    let newSize = prompt("What size of the grid do you want (max: 100)?")
+
+    let newSize = parseInt(prompt("What size of the grid do you want (between 4 and 100)?"), 10);
+    if (isNaN(newSize)) {
+        reset()
+    } else if (newSize > 100 || newSize < 4) {
+        reset()
+    }
+
     makeGrid(newSize);
     colorChanger();
 }
