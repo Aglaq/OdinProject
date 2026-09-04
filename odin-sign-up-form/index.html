@@ -9,12 +9,19 @@
 
   <body>
     <div class="container">
-      <img
-        class="background-image"
-        src="./images/beach.jpg"
-        width="400"
-        height="auto"
-      />
+      <div class="left-side">
+        <img
+          class="background-image"
+          src="./images/beach.jpg"
+          width="800"
+          height="auto"
+        />
+        <div class="logo">
+          <img id="odin-logo" src="./images/logo.png" />
+          <p id="odin">ODIN</p>
+        </div>
+        <p class="text-overlay">Photo by Maarten van den Heuvel on Unsplash</p>
+      </div>
       <div class="right-side">
         <div class="part intro">
           <p>
@@ -58,7 +65,7 @@
                 <div class="form-group">
                   <label for="user_phone_number">PHONE NUMBER</label>
                   <input
-                    type="number"
+                    type="tel"
                     id="user_phone_number"
                     name="user_phone_number"
                   />
