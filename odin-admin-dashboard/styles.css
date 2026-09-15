@@ -147,6 +147,39 @@ button {
 }
 
 .main {
+  display: grid;
   grid-area: 2 / 2 / 3 / 3;
   background-color: lightgray;
+  gap: 15px;
+}
+
+.projects {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.projects-grid-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.grid-card {
+  background-color: white;
+}
+
+.announcements {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.announcement-card {
+  background-color: white;
+}
+
+.trending {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.trending-card {
+  background-color: white;
 }
