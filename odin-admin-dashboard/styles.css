@@ -162,6 +162,10 @@ ul.list-with-images img {
   margin-right: 10px;
 }
 
+.img-icon {
+  filter: brightness(0) invert(1);
+}
+
 .main {
   display: grid;
   grid-area: 2 / 2 / 3 / 3;
