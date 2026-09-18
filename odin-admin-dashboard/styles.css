@@ -66,9 +66,18 @@ h6 {
   isolation: isolate;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/Roboto-VariableFont_wdth\,wght.woff2);
+}
+
+* {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
 .container {
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 4fr;
   grid-template-columns: 1fr 3fr;
 }
 
@@ -137,7 +146,7 @@ button {
   display: grid;
   gap: 15px;
   grid-area: 1 / 1 / 3 / 2;
-  background-color: lightskyblue;
+  background-color: rgb(62, 136, 225);
   color: white;
 }
 
@@ -145,6 +154,11 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: 20px;
+}
+
+.list {
+  margin-left: 30px;
 }
 
 ul.list-with-images {
