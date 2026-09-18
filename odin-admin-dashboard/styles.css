@@ -109,6 +109,10 @@ h6 {
   align-items: center;
 }
 
+.profile-pic {
+  border-radius: 50%;
+}
+
 .welcome {
   display: grid;
   grid-template-rows: 25px 25px;
