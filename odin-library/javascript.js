@@ -1,8 +1,20 @@
 const myLibrary = [
-  { title: "Vigil", author: "G. Saunders", pages: 192, read: false },
-  { title: "The Red Winter", author: "C. Sullivan", pages: 544, read: false },
-  { title: "Starside", author: "A. Aster", pages: 464, read: false },
-  { title: "The Children", author: "M. Albert", pages: 398, read: false },
+  { title: "Vigil", author: "G. Saunders", pages: 192, read: false, id: "xxx" },
+  {
+    title: "The Red Winter",
+    author: "C. Sullivan",
+    pages: 544,
+    read: false,
+    id: "xxx",
+  },
+  { title: "Starside", author: "A. Aster", pages: 464, read: false, id: "xxx" },
+  {
+    title: "The Children",
+    author: "M. Albert",
+    pages: 398,
+    read: false,
+    id: "xxx",
+  },
 ];
 
 function Book(title, author, pages, read) {
@@ -10,6 +22,7 @@ function Book(title, author, pages, read) {
   this.author = author;
   this.pages = pages;
   this.read = read;
+  this.id = self.crypto.randomUUID();
 }
 
 function addBookToLibrary() {
